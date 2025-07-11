@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Adams | Online Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous" defer></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body data-theme="theme" class="d-flex flex-column justify-content-center">
+    <header class="position-fixed w-100 top-0 z-3">
+        <nav class="navbar navbar-expand-lg px-4 h-100">
+            <div class="container-fluid d-flex justify-content-between">
+              <a class="navbar-brand" href="#"><img src="images/portfolio-header-2.gif" alt="Header"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center">
+                  <a class="nav-link" aria-current="page" href="/index.html#about" target="_self">About</a>
+                  <a class="nav-link" href="/index.html#skills">Skills</a>
+                  <a class="nav-link" href="/index.html#projects">Projects</a>
+                  <a class="nav-link" href="/index.html#work-in-progress">Work in Progress</a>
+                  <a class="nav-link" href="https://bit.ly/resume-of-adrian-adams" target="_blank">Resume</a>
+                  <a class="nav-link" href="index.html#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container col-12 col-md-10 mx-auto d-flex flex-column text-center text-md-start px-4" >
+        <section  class="rounded-5 p-4 intro_container" id="about">
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-7 text-center">
+                    <h1>Hello World!</h1>
+                    <div class="px-4">
+                        <p>...I don't know who you are - but I do know what you want. If you are looking for dev I can tell you I don't have money to split the bill, but what I do have are a very particular set of skills. Skills I have acquired over sleepless nights and too much coffee. Skills that make me as flexible as an empty schedule and adaptable, like an Adam adaptor. If you give me a shot, that'll be the end of it. I will not look for you on your lunch break, I will not pursue you after 17h00, but if you don't, I will probabaly just keep coding.</p>
+                        <p>Anyway I'm <span class="intro_name_container">Adrian</span>, a self-taught, I-hope-I-know-what-I'm-doing-please-can-this-code-just-work front-end dev guy.</p>
+                        <p class="intro_name_container"><b>Nice to meet you!</b></p>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-lg-5 h-100">
+                    <span class="intro_logo_bg rounded-5">
+                        <img src="images/tag-open.svg" alt="Intro Image" class="intro_logo_img">
+                    </span>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                
+            </div>
+        </section>
+        <section id="skills">
+            <div class="text-center">
+                <h2>Skills</h2>
+                <p>Some of my stronger skills. More are added all the time!</p>
+            </div>
+            <div class="col py-2">
+                <ul class="d-flex flex-wrap justify-content-center gap-0 gap-md-4 list-unstyled skills_hover bg-black rounded-4 text-white ct_skills">
+                    <li id="skills_css">
+                        <span>CSS</span>
+                        <img src="images/skill-icons--css.png" alt="CSS">
+                    </li>
+                    <li id="skills_bt">
+                        <span>Bootstrap</span>
+                        <img src="images/devicon--bootstrap.png" alt="Bootstrap">
+                    </li>
+                    <li id="skills_tw">
+                        <span>Tailwind</span>
+                        <img src="images/skill-icons--tailwindcss-dark.png" alt="Tailwind" >
+                    </li>
+                    <li id="skills_js">
+                        <span>Javascript</span>
+                        <img src="images/skill-icons--javascript.png" alt="JS" >
+                    </li>
+                    <li id="skills_figma">
+                        <span>Figma</span>
+                        <img src="images/material-icon-theme--figma.png" alt="Figma" >
+                    </li>
+                    <li id="skills_gs">
+                        <span>Google Suite</span>
+                        <img src="images/flat-color-icons--google.png" alt="Google Suite" >
+                    </li>
+                    <li id="skills_mso">
+                        <span>Microsoft Office</span>
+                        <img src="images/logos--microsoft-icon.png" alt="MS Office" >
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="text-center">
+                <h2>Projects</h2>
+                <p>Look! Some of the things I've made.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-4 justify-content-center">
+                <!-- Conference ticket generator -->
+                <div class="card" id="skillsCard1" style="width: 18rem;">
+                    <img src="images/coding-conf.png" class="card-img-top" alt="Conference ticket generator">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Conference ticket generator</h3>
+                        <p class="card-text">A ticket generator that accepts user input and produces out a ticket. I'd prefer a winning lottery ticket but anyway.</p>
+                        <a href="https://adrian-adams.github.io/coding-project-1/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+                <!-- Interactive card details form -->
+                <div class="card" id="skillsCard2"  style="width: 18rem;">
+                    <img src="images/bank-card.png" class="card-img-top" alt="Interactive card details form">
+                    <div class="card-body">
+                        <h3 class="card-title">Interactive card details form</h3>
+                        <p class="card-text">An intercative form that copies user input onto a virtual card. Sadly the acrd does not come with an exciting bank account.</p>
+                        <a href="https://adrian-adams.github.io/coding-project-2/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+                <!-- Calculator app -->
+                <div class="card" id="skillsCard3"  style="width: 18rem;">
+                    <img src="images/calculator.png" class="card-img-top" alt="Calculator app">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Calculator app</h3>
+                        <p class="card-text">A calculator with 3 colour themes. A colourblind theme is in the works.</p>
+                        <a href="https://adrian-adams.github.io/coding-project-3/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+                <!-- Clipboard landing page -->
+                <div class="card" id="skillsCard4"  style="width: 18rem;">
+                    <img src="images/landing-page.png" class="card-img-top" alt="Clipboard landing page">
+                    <div class="card-body">
+                        <h3 class="card-title">Clipboard landing page</h3>
+                        <p class="card-text">An informative landing page for a clipboard service.</p>
+                        <a href="https://adrian-adams.github.io/coding-project-4/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+                <!-- Interactive rating component -->
+                <div class="card" id="skillsCard5"  style="width: 18rem;">
+                    <img src="images/interactive-rating.png" class="card-img-top" alt="Interactive rating component">
+                    <div class="card-body">
+                        <h3 class="card-title">Interactive rating component</h3>
+                        <p class="card-text">A ratings sibmit card. How good (or bad) was our service?!</p>
+                        <a href="https://adrian-adams.github.io/coding-project-5/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section id="work-in-progress">
+            <div class="text-center">
+                <h3>Work in Progress</h3>
+                <p>These projects are being completed - some will use more tools and skills that are being used for newer projects, like React, Wordpress etc...</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <!-- Netflix -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/netflix-clone.png" class="card-img-top" alt="Netflix">
+                    <div class="card-body">
+                        <h3 class="card-title">Netflix clone</h3>
+                        <p class="card-text">A Netflix clone made using Tailwind and FlyonUI support. I have an account - not sure whose logins I'm using though.</p>
+                        <a href="https://adrian-adams.github.io/coding-project-6/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+                <!-- Mortgage calculator -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/mortgage-calculator.png" class="card-img-top" alt="Mortgage calculator">
+                    <div class="card-body">
+                        <h3 class="card-title">Mortgage calculator</h3>
+                        <p class="card-text">A simple mortgage calculator. I can use for the property I don't own.</p>
+                        <a href="https://adrian-adams.github.io/coding-project-7/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+                <!-- To Do List -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/to-do-list.png" class="card-img-top" alt="To Do List">
+                    <div class="card-body">
+                        <h3 class="card-title">To-Do list</h3>
+                        <p class="card-text">A To-Do list with notes you can add and remove. </p>
+                        <a href="https://adrian-adams.github.io/coding-project-8/" class="btn btn-primary" target="_blank">View Project</a>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-white h-100 p-4" id="contact">
+        <div class="col-12 col-md-10 col-xl-8 mx-auto">
+            <ul class="d-inline-block text-break list-unstyled m-0">
+                <li>
+                    <a href="tel:0849651716"><img src="images/phone.png" alt="Phone">084 965 1716</a>
+                </li>
+                <li>
+                    <a href="mailto:a4adams4@gmail.com?subject=Job%20Application:"><img src="images/email.png" alt="Email">a4adams4@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://bit.ly/resume-of-adrian-adams"><img src="images/cv.png" alt="Resume">Resume</a>
+                </li>
+                <li>
+                    <a href="https://github.com/adrian-adams" target="_blank"><img src="images/github.png" alt="Github">Github</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
